@@ -1,0 +1,26 @@
+#row1{
+background-color:black;
+position: inherit;
+    
+}
+.p{
+    margin-top: 10% !important;
+    
+}
+
+#formestudante, #formprofi, #formempree{
+    display: none;
+}
+#botao{ 
+border:1px solid #1c1c1c ;
+border-radius:4px;
+display:inline-block;
+cursor:pointer;
+font-family:Verdana;
+font-weight:bold;
+font-size:13px;
+padding:6px 10px;
+text-decoration:none;
+    background-color: #eefd0c;
+
+}

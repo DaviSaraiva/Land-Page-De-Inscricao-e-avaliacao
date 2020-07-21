@@ -1,0 +1,25 @@
+#imgfundo{
+   width: 100%;
+}
+.col-md-12{
+   padding: 0; 
+}
+.whatsapp{
+    
+    position: fixed;
+    top: 82%;
+    left: 1%;
+    padding: 10px;
+    z-index: 10000000;
+    margin-top: -125px;
+
+}
+icone{
+    position: fixed;
+left: 103%;
+top: 100%;
+width: 5%;
+height: 21%;
+margin-left: -150px;
+margin-top: -125px;
+}
