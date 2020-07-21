@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-154659583-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-154659583-1');
+</script>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon"  href="img/Logo_TopMídia.ico">
+
+        <link rel="stylesheet" href="css/estilopaginacurso.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/exibir.js" ></script>
+    <script type="text/javascript">
+        function gerarqr(){
+             var validarnome =  document.getElementById("nomeid").value; 
+                    var validardata =document.getElementById("datadenascimentoid").value;
+                var validaremail =  document.getElementById("emailid").value;
+                    var validarcelular= document.getElementById("celularid").value;
+              var url = ' Nome: ' + validarnome + ' Data: ' +  validardata + ' Celular: ' +  validarcelular + ' Email: ' + validaremail;
+              document.getElementById("imageqid").value ="https://chart.googleapis.com/chart?chs=300x300&cht=qr&chld=H&chl=" + url;
+        }
+        
+                function Enviar() {
+              if((document.getElementById("nomeid").value !== "") && (document.getElementById("datadenascimentoid").value !== "" )&& (document.getElementById("emailid").value !== "" )&&(document.getElementById("celularid").value !== "" ))  {      
+         
+                if(document.getElementById("formestudante").style.display === "block"){ 
+             window.open("https://pag.ae/7VywLuk2J/button");
+                                  }
+       else if(document.getElementById("formprofi").style.display === "block"){  window.open("https://pag.ae/7VywMWuHH/button");
+                                 }
+       else if(document.getElementById("formempree").style.display === "block"){  
+          window.open("https://pag.ae/7VywMfd4r/button");
+      }   }
+                    else{
+                        alert("Existem campo(s) vazios");
+                    }
+                }
+                    
+      
+         
+           </script>
+</head>
+<body style="background-image: url(img/Background_Formulario_Prancheta%201.png)">
+    
+               <center id="row1"> <img src="img/Logo_Prancheta%201.png" width="32%"></center>
+    <div class="cotainer-fluid">
+        <div class="row" id="row1">
+        <div class="col-sd-12 col-md-12">
+            </div>
+        </div>
+    </div>
+<div class="container"  >
+    <div class="row" id="row2">
+    <div class="col-sd-12 col-md-8"  >
+         <div class="formulario" id="formulario" >
+  <form name="formulario_vc" id="formulario_vc" action="https://formspree.io/xgevbegy"
+  method="POST" style="margin-top: 1%;"  >
+       <input type="hidden" name="_next" value="https://www.rossener.com/contato/mensagem-enviada/" />
+        <p class="nome">
+            <br> <label for="nome">Nome</label><br>
+            <input type="text" id="nomeid" class="form-control" required="required" name="nome" onblur="gerarqr();"/>
+        </p>
+      <p class="datadenascimento">
+      <label for="datadenascimento">Data de Nascimento</label><br>
+          <input type="date" id="datadenascimentoid" class="form-control"
+            required="required" name="datadenascimento" onblur="gerarqr();"  />
+      </p>
+        <p class="email">
+            <label for="email">Email</label><br>
+            <input type="email" id="emailid" class="form-control"  required="required"  placeholder="aleatorio@gmail.com"  name="email" onblur="gerarqr();"  />
+        </p>
+     
+        <p>
+         <p class="celular">
+             <label for="celular">Celular</label><br>
+            <input type="number" id="celularid" class="form-control"  required="required"  name="celular" onblur="gerarqr();" />
+              <p class="whatsapp">
+             <label for="whatsapp">WhatsApp</label><br>
+            <input type="number" id="whatsappid" class="form-control"  required="required"  name="whatsapp" />
+        <p class="opcaos" id="opcaosid">
+      <input type="radio" id="estudanteid" size="60" name="opcaos" value="estudante"  required="required"  onchange="exibirestudante();"/>
+             <label for="estudante" >Estudante</label>
+             <input type="radio" id="profissionalid" size="60" name="opcaos"  required="required"  value="profissional" onchange="exibirprofissional();" />
+            <label for="profissional">Profissional</label>
+            <input type="radio" id="empreendedorid" size="60" name="opcaos"  required="required"  value="empreendedor"  onchange="exibirempreendedor();" />
+           <label for="empreendedor">Empreendedor</label>
+      </p><br>
+      <div class="qr" >
+       <p class="imageq" >
+      <input type="text" value="" name="imageq" id="imageqid" style="display: none" />
+      </p>
+          </div>
+        <div id="formestudante" display="none" >
+       <p class="estudante">
+             <label for="faculdade">Faculdade</label><br>
+            <select  id="faculdadeid" class="form-control"  name="faculdade" >
+                <option>Selecione sua Faculdade...</option>
+                <option>AESPI</option>
+                <option>NASSAU</option>
+                <option>UFPI</option>
+                 <option>FAPI</option>
+                <option>ESTÁCIO</option>
+                <option >OUTRA</option>
+              
+           </select><br>
+            </p>
+            <div id="nomedafaculdadeid">
+            <p class="facu">
+             <label for="nomefaculdade">Caso sua Faculdade não esteja nas opções acima, informe o nome da sua:</label><br>
+            <input type="text" id="nomefaculdadeid" class="form-control" name="nomefaculdade" />
+                 </p>
+            </div>
+           
+            
+             <label for="curso">Cursos</label><br>
+            <select  id="faculdadeid" class="form-control"  name="curso" >
+                <option>Selecione seu Curso...</option>
+                <option>Comunicação Social-Publicidade e Propaganda</option>
+                <option>Comunicação Social-Jornalismo</option>
+                <option>Tecnologia da Informação-TI</option>
+                <option>Design Gráfico</option>
+                <option>Administração</option>
+                <option>Marketing</option>
+                <option >OUTRA</option>
+           </select><br>
+            <div id="nomedocursoid">
+            <p class="curso">
+             <label for="nomedocurso">Caso seu Curso não esteja nas opções acima, informe o nome:</label><br>
+            <input type="text" id="cursoid" class="form-control" name="nomedocurso" />
+                 </p>
+            </div>  
+           <input type="submit"  value="Confirme sua Inscrição!" id="botao" onclick="Enviar();" /><br>
+            
+      </div>
+    <div id="formprofi" display="none" >
+       <p class="profissional">
+             <label for="area">Área de Atuação</label>
+            <input type="text" id="areaid" class="form-control" name="area" /><br>
+           <input type="submit" value="Confirme sua Inscrição!" id="botao" onclick="Enviar();"  />
+      </div>
+      <div id="formempree" display="none" >
+       <p class="empreendedor">
+             <label for="ramo">Ramo de Atuação</label><br>
+            <input type="text" id="ramoid" class="form-control" name="ramo" /><br>
+           <input type="submit" value="Confirme sua Inscrição!" id="botao"  onclick="Enviar();"  />
+      </div>
+    </form>
+     </div> 
+    </div>
+    </div>
+    </div>
+    <br> <div class="container-fluid" >
+    <div class="row" id="row3">
+    <div class="col-sd-12 col-md-12" style="padding: 0;" >
+     <img src="img/Background_Site_Era_TOP-08.png" id="imgfundo" style="width: 100%;">
+        </div>
+       </div>
+    </div>
+</body>
+</html>
